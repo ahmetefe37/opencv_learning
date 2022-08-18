@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('lena.jpg',0)
+img = cv2.imread('files/lena.jpg',0)
 
 print(img)
 
@@ -12,5 +12,5 @@ key = cv2.waitKey(0) & 0xFF
 if key == 27:
     cv2.destroyAllWindows()
 elif key == ord('s'):
-    cv2.imwrite("lena_copy.jpg",img)
+    cv2.imwrite("files/lena_copy.jpg",img)
     cv2.destroyAllWindows()
